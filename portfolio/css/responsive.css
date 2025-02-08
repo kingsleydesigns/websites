@@ -11,6 +11,15 @@
 	.gallery-menu {
 		margin-left: 8rem;
 	}
+
+		/* Due to caleb's image height */
+	.message-box{
+		margin-top: 5rem;
+	}
+
+	.message-box p{
+		font-size: 1.2rem;
+	}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -28,7 +37,16 @@
 	}
 
 	.gallery-menu {
-    margin-left: 3.5rem;
+    	margin-left: 3.5rem;
+	}
+
+		/* Due to caleb's image height */
+	.message-box{
+		margin-top: 1rem;
+	}
+
+	.message-box p{
+		font-size: 1.1rem;
 	}
 }
 
@@ -66,6 +84,10 @@
 	}
 	.message-box{
 		margin-bottom: 30px;
+	}
+		/* Due to caleb's image height (just the rule below)*/
+	.right-box-pro{    
+		margin-top: 2.5rem;
 	}
 	.filter-button-group button{
 		padding: 12px 27px;
