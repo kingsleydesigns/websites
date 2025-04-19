@@ -106,3 +106,15 @@
 
 
 })(window.jQuery);
+
+
+
+
+
+VanillaTilt.init(document.querySelectorAll(".cards"), {
+	max: 15,
+	speed: 400,
+	scale: 1.05,
+	glare: true,
+	"max-glare": 0.2,
+  });
