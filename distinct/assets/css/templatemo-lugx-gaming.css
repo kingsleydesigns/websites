@@ -525,6 +525,76 @@ Header Style
   display:inline !important;
 }
 
+
+  /* 
+  ---------------------------------------------
+  Custom Nav dropdown styles
+  --------------------------------------------- 
+  */
+
+  /* Dropdown base styles */
+  .nav .has-submenu {
+    position: relative;
+  }
+
+  .nav .submenu {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    opacity: 0 !important;  /* Start invisible */
+    transform: translateY(-10px) !important;  /* Start slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s !important;  /* Animate opacity, transform, and delay visibility change */
+  }
+
+  .nav .submenu li {
+    padding: 0;
+  }
+
+  
+
+  /* Show submenu on hover (desktop) */
+  .nav .has-submenu:hover .submenu {
+    visibility: visible !important;   /* Make visible */
+    opacity: 1 !important;            /* Fade in */
+    transform: translateY(0) !important;  /* Move into place */
+    transition: opacity 0.3s ease, transform 0.3s ease !important;  /* Remove delay for the transition */
+  }
+
+
+  /* Reset inherited styles for submenu links */
+  .nav li.has-submenu .submenu li a {
+    all: unset; /* Wipe inherited styles */
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    background: none;
+    text-decoration: none;
+    text-transform: none !important;
+    font-weight: 300 !important;
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  /* Hover effect only for submenu items */
+  .nav li.has-submenu .submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    color: #000;
+    border-radius: 20px;
+  }
+
+  /* Override .active and hover background for submenu links */
+  .nav li.has-submenu .submenu li a,
+  .nav li.has-submenu .submenu li a.active {
+    background-color: transparent !important;
+    color: #fff !important;
+  }
+
+
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 5px;
@@ -642,6 +712,48 @@ Header Style
     padding-right: 0px !important;
   }
   
+
+  /* custom dropdown styling */
+  
+    .nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .nav li {
+      width: 100%;
+      display: block;
+    }
+    
+    .nav li a {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+    }
+    
+    /* Hide the original submenu always on mobile */
+    .nav .submenu {
+      display: none !important;
+    }
+    
+    /* Style for dynamically inserted submenu items */
+    .mobile-submenu-item {
+      background-color: black !important;
+      width: 90% !important;
+      margin-left: auto; /* Centers the narrower element */
+      margin-right: auto;
+      border-left: 3px solid #ccc; /* Left border for visual hierarchy */
+      border-right: 3px solid #ccc; /* Right border for visual hierarchy */
+    }
+    
+    .mobile-submenu-item a {
+      color: blue !important;
+    }
+    
+
+/* Add some JavaScript to toggle the submenu */
+
 }
 
 /* 

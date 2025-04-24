@@ -118,3 +118,59 @@ VanillaTilt.init(document.querySelectorAll(".cards"), {
 	glare: true,
 	"max-glare": 0.2,
   });
+
+
+// Prevent the default action of the 'Shop' link (reloading the page or navigating away)
+const shopLink = document.querySelector('.shop-link');
+shopLink.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevents the default action (page reload/navigation)
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+	// Function to check if we're on mobile
+	function isMobile() {
+	  return window.innerWidth <= 767; // Adjust breakpoint as needed
+	}
+	
+	const shopLink = document.querySelector('.shop-link');
+	
+	// Handle shop link click
+	shopLink.addEventListener('click', function(e) {
+	  if (isMobile()) {
+		e.preventDefault();
+		
+		const hasSubmenu = this.parentElement;
+		const submenu = hasSubmenu.querySelector('.submenu');
+		
+		// Toggle an expanded class instead of changing display directly
+		hasSubmenu.classList.toggle('expanded');
+		
+		// Here's the key change: when using classList.toggle, it returns
+		// a boolean indicating if the class was added or removed
+		if (hasSubmenu.classList.contains('expanded')) {
+		  // Clone each submenu item and insert directly after the Shop item
+		  const submenuItems = submenu.querySelectorAll('li');
+		  const fragment = document.createDocumentFragment();
+		  
+		  submenuItems.forEach(item => {
+			const clonedItem = item.cloneNode(true);
+			clonedItem.classList.add('mobile-submenu-item');
+			fragment.appendChild(clonedItem);
+		  });
+		  
+		  // Insert all submenu items after the Shop list item
+		  if (hasSubmenu.nextSibling) {
+			hasSubmenu.parentNode.insertBefore(fragment, hasSubmenu.nextSibling);
+		  } else {
+			hasSubmenu.parentNode.appendChild(fragment);
+		  }
+		} else {
+		  // Remove the inserted mobile submenu items
+		  const mobileItems = document.querySelectorAll('.mobile-submenu-item');
+		  mobileItems.forEach(item => item.remove());
+		}
+	  }
+	});
+  });
