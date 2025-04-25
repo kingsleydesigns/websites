@@ -540,6 +540,7 @@ Header Style
   .nav .submenu {
     visibility: hidden;
     position: absolute;
+    background-color: #0071f8;
     top: 100%;
     left: 5%;
     z-index: 1000;
@@ -755,6 +756,15 @@ Header Style
 /* Add some JavaScript to toggle the submenu */
 
 }
+
+
+/* Fixing broken shop layout on page load */
+.trending-items .thumb img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+}
+ 
 
 /* 
 ---------------------------------------------

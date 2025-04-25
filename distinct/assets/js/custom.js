@@ -48,11 +48,16 @@
 				rdn_events_list.arrange({
 					filter: filterValue
 				});
+
+				// Delay a bit to let Isotope finish rearranging DOM before recalculating AOS
+				setTimeout(resetAOSDelays, 100); // or use 0 if you don't notice a delay
+
 				filtersElem.querySelector('.is_active').classList.remove('is_active');
 				event.target.classList.add('is_active');
 				event.preventDefault();
 			});
 		}
+
 	}
 
 
@@ -108,6 +113,23 @@
 })(window.jQuery);
 
 
+window.addEventListener("load", () => {
+    window.dispatchEvent(new Event("resize"));
+    AOS.refresh(); // Important if you’re using animations
+  });
+
+  function resetAOSDelays() {
+	const visibleCards = document.querySelectorAll('.cards'); // all items
+	let index = 0;
+	visibleCards.forEach(card => {
+		// Only apply delay if item is currently visible in the grid
+		if (card.style.display !== 'none') {
+			card.setAttribute('data-aos-delay', (index * 100).toString());
+			index++;
+		}
+	});
+	AOS.refreshHard(); // Important to apply the new delays
+}
 
 
 
