@@ -42,23 +42,20 @@
 		if (filtersElem) {
 			filtersElem.addEventListener('click', function(event) {
 				if (!matchesSelector(event.target, 'a')) {
-					return;
+				  return;
 				}
 				const filterValue = event.target.getAttribute('data-filter');
+				
 				rdn_events_list.arrange({
-					filter: filterValue
+				  filter: filterValue
 				});
-
-				// Delay a bit to let Isotope finish rearranging DOM before recalculating AOS
-				setTimeout(resetAOSDelays, 100); // or use 0 if you don't notice a delay
-
+			  
 				filtersElem.querySelector('.is_active').classList.remove('is_active');
 				event.target.classList.add('is_active');
 				event.preventDefault();
-			});
+			  });
+			}
 		}
-
-	}
 
 
 	// Menu Dropdown Toggle
@@ -113,23 +110,44 @@
 })(window.jQuery);
 
 
-window.addEventListener("load", () => {
-    window.dispatchEvent(new Event("resize"));
-    AOS.refresh(); // Important if you’re using animations
-  });
 
-  function resetAOSDelays() {
-	const visibleCards = document.querySelectorAll('.cards'); // all items
-	let index = 0;
-	visibleCards.forEach(card => {
-		// Only apply delay if item is currently visible in the grid
-		if (card.style.display !== 'none') {
-			card.setAttribute('data-aos-delay', (index * 100).toString());
-			index++;
-		}
+// Function to apply staggered animation delays
+function applyAnimationDelays() {
+	const cards = document.querySelectorAll('.console');
+	cards.forEach((card, index) => {
+	  card.style.setProperty('--delay', `${index * 100}ms`);
+	  
+	  // Trigger reflow to restart animation
+	  card.classList.remove('animate');
+	  void card.offsetWidth; // Force reflow
+	  card.classList.add('animate');
 	});
-	AOS.refreshHard(); // Important to apply the new delays
-}
+  }
+
+// Call this function initially on page load
+
+
+
+  
+
+
+// window.addEventListener("load", () => {
+//     window.dispatchEvent(new Event("resize"));
+//     AOS.refresh(); // Important if you’re using animations
+//   });
+
+//   function resetAOSDelays() {
+// 	const visibleCards = document.querySelectorAll('.cards'); // all items
+// 	let index = 0;
+// 	visibleCards.forEach(card => {
+// 		// Only apply delay if item is currently visible in the grid
+// 		if (card.style.display !== 'none') {
+// 			card.setAttribute('data-aos-delay', (index * 100).toString());
+// 			index++;
+// 		}
+// 	});
+// 	AOS.refreshHard(); // Important to apply the new delays
+// }
 
 
 

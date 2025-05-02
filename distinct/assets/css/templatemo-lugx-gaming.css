@@ -765,6 +765,16 @@ Header Style
   aspect-ratio: 3/4;
 }
  
+/* Logo styling */
+
+.logo-text {
+  width: 400%;
+}
+
+/* Card animations for shop page */
+
+
+
 
 /* 
 ---------------------------------------------
