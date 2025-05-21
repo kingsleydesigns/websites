@@ -1,0 +1,344 @@
+{
+  "xbx360": [
+    {
+      "id": "fallout3",
+      "name": "Fallout 3",
+      "genre": "Action RPG",
+      "image": "assets/images/xbox360-fallout3.jpg",
+      "description": "Set in a post-apocalyptic Washington D.C., Fallout 3 offers an expansive open-world experience where players navigate the Wasteland, making choices that influence the game's outcome."
+    },
+    {
+      "id": "diablo3-ultimate-evil-edition",
+      "name": "Diablo III",
+      "genre": "Action RPG / Hack and Slash",
+      "image": "assets/images/xbox360-diablo3.jpg",
+      "description": "A dark fantasy action RPG where you fight hordes of demons and collect powerful loot. Includes the Reaper of Souls expansion and supports solo or cooperative play."
+    },
+    {
+      "id": "halo4",
+      "name": "Halo 4",
+      "genre": "First-Person Shooter",
+      "image": "assets/images/xbox360-halo4.jpg",
+      "description": "Continuing the saga of Master Chief, Halo 4 introduces new enemies and delves deeper into the Forerunner lore, offering both single-player and multiplayer experiences."
+    },
+    {
+      "id": "gears2",
+      "name": "Gears of War 2",
+      "genre": "Third-Person Shooter",
+      "image": "assets/images/xbox360-gearsofwar2.jpg",
+      "description": "Gears of War 2 enhances the cover-based shooting mechanics of its predecessor, introducing new multiplayer modes and a gripping storyline amidst intense action."
+    },
+    {
+      "id": "nba2k12",
+      "name": "NBA 2K12",
+      "genre": "Sports",
+      "image": "assets/images/xbox360-nba2k12.jpg",
+      "description": "NBA 2K12 offers basketball enthusiasts a chance to play as legendary figures, featuring the 'NBA's Greatest' mode with detailed recreations of historic matchups."
+    },
+    {
+      "id": "payday2",
+      "name": "Payday 2",
+      "genre": "First-Person Shooter",
+      "image": "assets/images/xbox360-payday2.jpg",
+      "description": "In Payday 2, players team up for high-stakes heists, requiring coordination and strategy to execute missions and evade law enforcement."
+    },
+    {
+      "id": "doom3",
+      "name": "Doom 3",
+      "genre": "First-Person Shooter",
+      "image": "assets/images/xbox360-doom3.jpg",
+      "description": "Doom 3 reimagines the classic franchise with a focus on horror and atmosphere, as players battle demonic forces on Mars."
+    },
+    {
+      "id": "blue-dragon",
+      "name": "Blue Dragon",
+      "genre": "JRPG / Turn-Based Strategy",
+      "image": "assets/images/xbox360-bluedragon.jpg",
+      "description": "A traditional Japanese RPG with turn-based combat and shadow-summoning powers. Created by Final Fantasy's Hironobu Sakaguchi with art by Akira Toriyama."
+    },
+    {
+      "id": "nascar-08",
+      "name": "NASCAR 08",
+      "genre": "Racing / Simulation",
+      "image": "assets/images/xbox360-nascar08.jpg",
+      "description": "Race your way to the top in the official NASCAR simulation. Featuring realistic driving physics, authentic tracks, and team management, NASCAR 08 puts you in the driver's seat of the stock car world."
+    },
+    {
+      "id": "left4dead",
+      "name": "Left 4 Dead 2",
+      "genre": "First-Person Shooter",
+      "image": "assets/images/xbox360-left4dead2.jpg",
+      "description": "Left 4 Dead emphasizes cooperative gameplay, as players team up to survive against relentless zombie hordes in various scenarios."
+    },
+    {
+      "id": "darkstarone",
+      "name": "Darkstar One",
+      "genre": "Space Combat Simulator",
+      "image": "assets/images/xbox360-darkstarone.jpg",
+      "description": "Pilot the customizable Darkstar One spacecraft, exploring over 300 solar systems and engaging in space combat and trading."
+    },
+    {
+      "id": "tombraider",
+      "name": "Tomb Raider",
+      "genre": "Action-Adventure",
+      "image": "assets/images/xbox360-tombraider.jpg",
+      "description": "Experience the origin story of Lara Croft, as she transforms from a young survivor to a seasoned adventurer on a mysterious island."
+    },
+    {
+      "id": "darkness-ii",
+      "name": "The Darkness II",
+      "genre": "First-Person Shooter / Supernatural Horror",
+      "image": "assets/images/xbox360-thedarkness2.jpg",
+      "description": "Play as Jackie Estacado, a mobster wielding supernatural powers. Experience intense combat and a unique cel-shaded art style in this brutal FPS."
+    },
+    {
+      "id": "mafia2",
+      "name": "Mafia II",
+      "genre": "Action-Adventure",
+      "image": "assets/images/xbox360-mafia2.jpg",
+      "description": "Step into the shoes of Vito Scaletta, navigating the criminal underworld of a post-war American city in this narrative-driven game."
+    },
+    {
+      "id": "masseffect",
+      "name": "Mass Effect",
+      "genre": "Action RPG",
+      "image": "assets/images/xbox360-masseffect.jpg",
+      "description": "As Commander Shepard, assemble a team to save the galaxy from an ancient threat, making choices that impact the story's outcome."
+    },
+    {
+      "id": "splinter-cell-conviction",
+      "name": "Splinter Cell: Conviction",
+      "genre": "Stealth Action / Third-Person Shooter",
+      "image": "assets/images/xbox360-splintercellconviction.jpg",
+      "description": "Sam Fisher returns in a fast-paced, cinematic stealth game. Use gadgets, interrogation, and the Mark & Execute system to eliminate targets silently."
+    },
+    {
+      "id": "alan-wake",
+      "name": "Alan Wake",
+      "genre": "Psychological Thriller / Action-Adventure",
+      "image": "assets/images/xbox360-alanwake.jpg",
+      "description": "A writer trapped in a nightmare must uncover the mystery behind his missing wife. Use light as your weapon in this story-driven psychological thriller."
+    },
+    
+    {
+      "id": "operation-flashpoint-dragon-rising",
+      "name": "Operation Flashpoint",
+      "genre": "Tactical Shooter / Military Simulation",
+      "image": "assets/images/xbox360-operationflashpoint-dragonrising.jpg",
+      "description": "A realistic military FPS focused on tactical squad gameplay. Plan, flank, and command your fireteam in a large-scale open battlefield."
+    },
+    {
+      "id": "rage",
+      "name": "Rage",
+      "genre": "First-Person Shooter",
+      "image": "assets/images/xbox360-rage.jpg",
+      "description": "In a post-apocalyptic world, players fight against mutants and hostile factions using a mix of shooting and vehicular combat."
+    },
+    {
+      "id": "overlord",
+      "name": "Overlord",
+      "genre": "Action RPG",
+      "image": "assets/images/xbox360-overlord.jpg",
+      "description": "Command an army of minions to conquer lands and defeat heroes, embracing your role as the dark overlord."
+    },
+    {
+      "id": "cod4mw",
+      "name": "Call of Duty 4: Modern Warfare",
+      "genre": "First-Person Shooter",
+      "image": "assets/images/xbox360-cod-modernwarfare.jpg",
+      "description": "Modern Warfare revolutionizes the FPS genre with its contemporary setting, intense single-player campaign, and robust multiplayer modes."
+    },
+    {
+      "id": "castlevania2",
+      "name": "Castlevania: Lords of Shadow 2",
+      "genre": "Action-Adventure",
+      "image": "assets/images/xbox360-castlevania2.jpg",
+      "description": "Play as Dracula in a journey that spans both medieval and modern worlds, battling enemies with a variety of weapons and abilities."
+    },
+    {
+      "id": "skyrim",
+      "name": "The Elder Scrolls V: Skyrim",
+      "genre": "Action RPG",
+      "image": "assets/images/xbox360-elderscrollsv-skyrim.jpg",
+      "description": "Skyrim offers an expansive open world filled with quests, dragons, and rich lore, allowing players to forge their own path in the land of Tamriel."
+    },
+    {
+      "id": "assassins-creed-revelations",
+      "name": "Assassin Creed: Revelations",
+      "genre": "Action-Adventure / Stealth",
+      "image": "assets/images/xbox360-acrevelations.jpg",
+      "description": "Ezio's final chapter leads him to Constantinople, where he uncovers secrets of the Assassins. Use stealth, gadgets, and the new hookblade in a richly detailed world."
+    }
+  ],
+  "ps3": [
+    {
+      "id": "cod_black_ops",
+      "name": "Call of Duty: Black Ops",
+      "genre": "First-person shooter",
+      "image": "assets/images/ps3-cod-blackops.jpg",
+      "description": "Engage in covert operations during the Cold War era, featuring a gripping single-player campaign and robust multiplayer modes."
+    },
+    {
+      "id": "streetfighter_x_tekken",
+      "name": "Street Fighter X Tekken",
+      "genre": "Fighting",
+      "image": "assets/images/ps3-streetfighter-X-tekken.jpg",
+      "description": "A crossover fighting game that brings together characters from Street Fighter and Tekken in tag team battles."
+    },
+    {
+      "id": "bioshock_2",
+      "name": "BioShock 2",
+      "genre": "First-person shooter",
+      "image": "assets/images/ps3-bioshock2.jpg",
+      "description": "Return to the underwater city of Rapture as a Big Daddy in this atmospheric shooter."
+    },
+    {
+      "id": "max_payne_3",
+      "name": "Max Payne 3",
+      "genre": "Third-person shooter",
+      "image": "assets/images/ps3-maxpayne3.jpg",
+      "description": "Follow Max Payne's journey through Brazil in a gritty tale of corruption and vengeance."
+    },
+    {
+      "id": "borderlands_2",
+      "name": "Borderlands 2",
+      "genre": "First-person shooter",
+      "image": "assets/images/ps3-borderlands2.jpg",
+      "description": "Loot and shoot your way through Pandora with a cast of quirky characters and endless weapons."
+    },
+    {
+      "id": "infamous",
+      "name": "Infamous",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-infamous.jpg",
+      "description": "Play as Cole MacGrath, a bike messenger turned superhuman, navigating a city in chaos."
+    },
+    {
+      "id": "armored_core_v",
+      "name": "Armored Core V",
+      "genre": "Vehicular combat",
+      "image": "assets/images/ps3-armoredcoreV.jpg",
+      "description": "Pilot customizable mechs in tactical battles across a dystopian world."
+    },
+    {
+      "id": "assassins_creed_2",
+      "name": "Assassin's Creed II",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-ac2.jpg",
+      "description": "Explore Renaissance Italy as Ezio Auditore, unraveling a tale of family, power, and vengeance."
+    },
+    {
+      "id": "fifa_13",
+      "name": "FIFA 13",
+      "genre": "Sports",
+      "image": "assets/images/ps3-fifa13.jpg",
+      "description": "Experience the world's game with improved AI and realistic gameplay."
+    },
+    {
+      "id": "dark_sector",
+      "name": "Dark Sector",
+      "genre": "Third-person shooter",
+      "image": "assets/images/ps3-darksector.jpg",
+      "description": "Wield the deadly glaive as Hayden Tenno, battling bio-mechanical foes in a dark world."
+    },
+    {
+      "id": "super_street_fighter_iv",
+      "name": "Super Street Fighter IV",
+      "genre": "Fighting",
+      "image": "assets/images/ps3-superstreetfighter4.jpg",
+      "description": "An enhanced version of Street Fighter IV with new characters and features."
+    },
+    {
+      "id": "gran_turismo_5",
+      "name": "Gran Turismo 5",
+      "genre": "Racing",
+      "image": "assets/images/ps3-granturismo5.jpg",
+      "description": "Experience realistic racing with a vast selection of cars and tracks."
+    },
+    {
+      "id": "dead_rising_2",
+      "name": "Dead Rising 2",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-deadrising2.jpg",
+      "description": "Survive a zombie outbreak in Fortune City using an array of improvised weapons."
+    },
+    {
+      "id": "ruse",
+      "name": "R.U.S.E.",
+      "genre": "Real-time strategy",
+      "image": "assets/images/ps3-ruse.jpg",
+      "description": "Deceive your enemies and lead your army to victory in this World War II strategy game."
+    },
+    {
+      "id": "dead_island",
+      "name": "Dead Island",
+      "genre": "Action role-playing",
+      "image": "assets/images/ps3-deadisland.jpg",
+      "description": "Fight for survival on a zombie-infested tropical island."
+    },
+    {
+      "id": "fight_night_round_3",
+      "name": "Fight Night Round 3",
+      "genre": "Sports",
+      "image": "assets/images/ps3-fightnightround3.jpg",
+      "description": "Step into the ring with boxing legends in this realistic fighting game."
+    },
+    {
+      "id": "watch_dogs",
+      "name": "Watch Dogs",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-watchdogs.jpg",
+      "description": "Hack the city of Chicago as Aiden Pearce in a quest for revenge."
+    },
+    {
+      "id": "just_cause_2",
+      "name": "Just Cause 2",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-justcause2.jpg",
+      "description": "Cause chaos in the open-world island of Panau with explosive action."
+    },
+    {
+      "id": "hitman_absolution",
+      "name": "Hitman: Absolution",
+      "genre": "Stealth",
+      "image": "assets/images/ps3-hitmanabsolution.jpg",
+      "description": "Take on the role of Agent 47 in a mission of personal redemption."
+    },
+    {
+      "id": "prince_of_persia",
+      "name": "Prince of Persia",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-princeofpersia.jpg",
+      "description": "Embark on a journey to cleanse the world of corruption with acrobatic prowess."
+    },
+    {
+      "id": "nfs_hot_pursuit",
+      "name": "Need for Speed: Hot Pursuit",
+      "genre": "Racing",
+      "image": "assets/images/ps3-nfs-hotpursuit.jpg",
+      "description": "Experience high-speed chases as both racer and cop in an open-world environment."
+    },
+    {
+      "id": "star_wars_force_unleashed",
+      "name": "Star Wars: The Force Unleashed",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-starwars-theforceunleashed.jpg",
+      "description": "Unleash the power of the Force as Darth Vader's secret apprentice."
+    },
+    {
+      "id": "smackdown_vs_raw_2009",
+      "name": "WWE SmackDown vs. Raw 2009",
+      "genre": "Sports",
+      "image": "assets/images/ps3-wwe.jpg",
+      "description": "Enter the ring with WWE superstars in this wrestling simulation."
+    },
+    {
+      "id": "ghostbusters",
+      "name": "Ghostbusters: The Video Game",
+      "genre": "Action-adventure",
+      "image": "assets/images/ps3-ghostbusters.jpg",
+      "description": "Join the original Ghostbusters team in a new adventure to save New York City."
+    }
+  ]
+}
+  
