@@ -7915,6 +7915,11 @@ del {
   text-decoration: underline;
 }
 
+.footer-heading-text {
+  font-size: 60px;
+  color: #fff;
+}
+
 /* .loader-logo {
   width: 200px;
   height: 100px;
@@ -7932,8 +7937,6 @@ del {
       cursor: pointer;
   }
 
- 
-
   .goog-te-gadget {
       color: transparent !important;
   }
@@ -7944,4 +7947,15 @@ del {
 
   body {
       top: 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    #google_translate_element {
+      position: absolute;
+      top: 50%;
+      right: 98px;
+      transform: translateY(-50%) scale(0.85);
+      transform-origin: top right;
+      z-index: 999;
+    }
   }

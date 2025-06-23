@@ -216,9 +216,10 @@
 // Translate feature
 
 function googleTranslateElementInit() {
+  console.log("Google Translate Init function called"); // Test log
   new google.translate.TranslateElement({
     pageLanguage: 'en',
-    includedLanguages: 'en,he',
+    includedLanguages: 'en,iw',
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
     autoDisplay: false
   }, 'google_translate_element');
