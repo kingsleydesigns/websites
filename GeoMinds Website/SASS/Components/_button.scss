@@ -1,0 +1,85 @@
+// =========== LANDING PAGE ===============
+.btn {
+    background-color: white;
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 100px;
+    font-weight: $font-thick;
+    text-transform: uppercase;
+    color: $color-text;
+    box-shadow: 0px 0px 10px #00000094;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 20px black;
+        outline: 3px solid white;
+        outline-offset: 5px;
+    }
+
+    &:active {
+        transform: translateY(2px);
+        box-shadow: 0px 0px 5px black;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        background-color: white;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    &:hover::after {
+        transform: scale(150%);
+        opacity: 0;
+    }
+}
+// =========== LANDING PAGE ===============
+
+// =========== EXCITING PAGE ===============
+.btn2 {
+    width: fit-content;
+    text-decoration: none;
+    font-weight: $font-thick;
+    border-bottom: 2px solid $color-primary-mid;
+    color: $color-primary-mid;    
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-image: linear-gradient(to right, $color-primary-light-text, $color-primary-mid-text, $color-primary-dark-text);
+        color: white;
+        padding: 10px 20px 10px 20px;
+        border-bottom: 3px solid white;
+        box-shadow: 0px 0px 10px black;
+        transform: scale(110%);
+    }
+}
+// =========== EXCITING PAGE ===============
+
+// =========== TOUR PAGE ===============
+.green {
+    display: flex;
+    align-self: center;
+    background-color: $color-primary-mid-text;
+    color: white;
+
+    &:hover {
+        outline: 3px solid $color-primary-mid-text;
+        outline-offset: 5px;
+        box-shadow: none;
+    }
+
+    &::after {
+        background-color: $color-primary-mid-text;
+    }
+}
+// =========== TOUR PAGE ===============

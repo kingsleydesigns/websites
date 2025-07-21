@@ -1,0 +1,24 @@
+.about-section {
+    background-image: 
+    linear-gradient(to right bottom, $color-primary-light, $color-primary-mid, $color-primary-dark), 
+    url('/images/background2.jpeg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    margin-top: -15vh;
+    transform: skewY(-7deg);
+
+    .skew-secion {
+        transform: skewY(7deg);
+
+        .about-card {
+            display: flex;
+            gap: 50px;
+        }
+    }
+}

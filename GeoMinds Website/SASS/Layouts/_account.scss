@@ -1,0 +1,18 @@
+.account-background {
+    background-image: 
+    linear-gradient(to right bottom, #66FF33, #33b31a, #006600);
+    height: 150vh;
+    align-content: center;
+}
+
+.account-body {
+    background-image: linear-gradient(110deg, #ffffffce 50%, #ffffff00 50%), url('/images/land.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+

@@ -1,0 +1,48 @@
+// =========== LANDING PAGE ===============
+.content_bd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    gap: 50px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+
+        h1 {
+            letter-spacing: 50px;
+            font-size: 60px;
+            font-weight: $font-mid-thick;
+            color: white;
+        }
+    
+        p {
+            letter-spacing: 18px;
+            font-size: $font-size-mid;
+            color: white;
+        }
+    }
+}
+// =========== LANDING PAGE ===============
+
+
+// =========== EXCITING PAGE ===============
+.top, .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $color-grey-dark;
+
+    h1 { 
+        font-size: $font-size-mid;
+        text-transform: uppercase;
+        font-weight: $font-thick;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+// =========== EXCITING PAGE ===============

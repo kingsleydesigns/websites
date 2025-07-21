@@ -1,0 +1,15 @@
+.heading {
+    font-weight: $font-mid-thick;
+    text-align: center;
+    backface-visibility: hidden;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-primary-light-text, $color-primary-mid-text, $color-primary-dark-text);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: skewX(15deg) skewY(-1deg);
+        letter-spacing: 5px;
+    }
+}

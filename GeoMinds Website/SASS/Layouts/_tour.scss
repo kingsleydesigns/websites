@@ -1,0 +1,16 @@
+.tour-section {
+    background-color: $color-grey-light;
+    height: 170vh;
+    margin-top: -15vh;
+    padding: 30vh 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+    .flip-card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    } 
+}

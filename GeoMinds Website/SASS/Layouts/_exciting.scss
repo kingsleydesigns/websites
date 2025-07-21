@@ -1,0 +1,27 @@
+.exciting-section {
+    background-color: $color-grey-light;
+    height: 120vh;
+    margin-top: -20vh;
+    // padding-top: 25vh;
+    padding: 25vh 100px 0px 100px;
+
+    .exciting-container {
+        // margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+}
+
+.desc-container {
+    display: flex;
+    justify-content: space-between;
+
+
+    .desc-text-bd {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 45%;
+    }
+}

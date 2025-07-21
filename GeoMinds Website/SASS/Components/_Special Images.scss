@@ -1,0 +1,62 @@
+.desc-images {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    
+    .image-container {
+        position: relative;
+        z-index: 10;
+
+        .image1 {
+            width: 250px;
+            height: 150px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            box-shadow: 0px 0px 30px black;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                z-index: 20;
+                outline: 7px solid $color-primary-mid-text;
+                outline-offset: 10px;
+                transform: scale(120%);
+            }
+        }
+        
+    
+        .image2 {
+            width: 250px;
+            height: 150px;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            box-shadow: 0px 0px 30px black;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                z-index: 20;
+                outline: 7px solid $color-primary-mid-text;
+                outline-offset: 10px;
+                transform: scale(120%);
+            }
+        }
+    
+        .image3 {
+            width: 250px;
+            height: 150px;
+            position: absolute;
+            top: 110px;
+            left: 120px;
+            box-shadow: 0px 0px 30px black;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                z-index: 20;
+                outline: 7px solid $color-primary-mid-text;
+                outline-offset: 10px;
+                transform: scale(120%);
+            }
+        }
+    }
+}

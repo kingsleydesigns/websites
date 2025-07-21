@@ -1,0 +1,61 @@
+.comment-body {
+    background-color: $color-grey-light;
+    padding: 30px;
+    width: 85%;
+    margin: 0 auto;
+    transform: skew(-7deg);
+
+    .comment-items {
+        transform: skew(7deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+        .comment-shape {
+            height: 150px;
+            width: 350px;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+            clip-path: circle(40% at 50% 50%);
+
+            .comment-image {
+                height: 100%;
+                width: 100%;
+                transition: all 0.5s ease-in-out;
+                position: relative;
+            }
+
+            .name {
+                color: white;
+                font-weight: $font-thick;
+                position: absolute;
+                transform: translateY(-5px);
+                opacity: 0;
+                text-align: center;
+                transition: all 0.5s ease-in-out;
+            }
+
+            &:hover .comment-image {
+                filter: blur(1px) brightness(70%);
+                transform: scale(110%);
+            }
+
+            &:hover .name {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .comment-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.7;
+            color: $color-grey-dark;
+
+            .main {
+                font-weight: $font-thick;
+            }
+        }
+    }
+}

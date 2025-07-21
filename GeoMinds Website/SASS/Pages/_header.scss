@@ -1,0 +1,12 @@
+.header {
+    // background-color: #ff0000;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0 10px;
+
+    &_logo {
+        width: 120px;
+        height: auto;
+    }
+}
