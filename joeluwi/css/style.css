@@ -840,13 +840,44 @@ p.heading-text {
 /*skils*/
 
 
+/* My custom css */
+
+.about-align {
+    display: flex;
+    align-items: center; /* Vertically center the two columns */
+    flex-wrap: wrap; /* Keep it responsive on smaller screens */
+  }
+  
+  .about-align .proPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-align .proPic img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
 
+  /* For the about texts */
 
-
-
-
-
+  @keyframes fadeLeftIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .tab-pane.fade-left-custom {
+    animation: fadeLeftIn 0.8s ease both;
+  }
+  
 
 
 

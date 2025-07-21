@@ -84,6 +84,15 @@ $(document).ready(function () {
     });
 
 
+    // AOS Init JS
+
+    // Initialize AOS (Animate On Scroll)
+    AOS.init({
+        duration: 2000,
+        once: true,
+    });
+
+
     //************* Owl Carousel
 
     $("#testimonial-slider").owlCarousel({
@@ -116,6 +125,10 @@ $(document).ready(function () {
         $(this).removeClass("btn-default").addClass("btn-primary");
     });
 
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
+        AOS.refresh();
+    });
+      
 
 
 });

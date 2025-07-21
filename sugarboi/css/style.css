@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navigation */
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Brand Area */
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .nav-brand h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .nav-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff3366;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff3366;
+  }
+  
+  .nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  #menu {
+    display: none; 
+  }
+
+  
+  /* Responsive Tweak */
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0;
+      display: none;
+    }
+
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: white;
+        position: absolute;
+        top: 1.4rem;
+        right: 1rem;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+    }
+
+    .open a {
+        display: block;
+    }
+
+  }
+  
+/* Header Hero */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+            url('../img/vintagecollection2.jpg') no-repeat center center/cover;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+  z-index: 2;
+  margin-top: 4rem;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA Button */
+.btn {
+  background-color: #ff3366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6004c;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+
+ /* Preloader styling */
+
+ /* Preloader styles */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+  }
+  
+  .loader-content {
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  .loader-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .loader-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #ff3366;
+    letter-spacing: 1px;
+  }
+  
+  /* Fade-out animation */
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+ /* About Section */
+
+ .about-home {
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    background: #f3f3f3;
+    border-radius: 10px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .about-img {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .about-img img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .about-text {
+      max-width: 50%;
+    }
+  
+    .about-img {
+      max-width: 45%;
+    }
+  }
+  
+
+  /* Counter section */
+
+  .stats-section {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .stat-box {
+    flex: 1 1 200px;
+  }
+  
+  .stat-box .counter {
+    font-size: 3rem;
+    color: #ff3366;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .stat-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+
+  .stat-box i {
+    font-size: 2.5rem;
+    color: #ff3366;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+
+  /* Why choose us section */
+
+  .why-choose-us {
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    background: #f3f3f3;
+    text-align: center;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .feature-box {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Background animation overlay */
+.feature-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background: #fff0f5;
+    z-index: -1;
+    transition: height 0.4s ease;
+  }
+  
+  /* Hover effect: background fills from bottom */
+  .feature-box:hover::before {
+    height: 100%;
+  }
+  
+  /* Optional: Change text/icon color on hover */
+  .feature-box:hover {
+    background-color: #ff3366;
+    color: #ff3366;
+  }
+  
+  .feature-box i {
+    font-size: 2.5rem;
+    color: #ff3366;
+    margin-bottom: 1rem;
+  }
+
+  /* Animate icon inside .feature-box on hover */
+  .feature-box:hover i {
+    transform: scale(1.2);
+    animation: bounceIcon 0.4s ease-in-out;
+  }
+  
+  /* Keyframes for bounce */
+  @keyframes bounceIcon {
+    0%   { transform: scale(1.2) translateY(0); }
+    50%  { transform: scale(1.2) translateY(-10px); }
+    100% { transform: scale(1.2) translateY(0); }
+  }
+  
+  
+  .feature-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-box p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Desktop layout */
+  @media (min-width: 768px) {
+    .features-container {
+      flex-direction: row;
+      justify-content: space-around;
+      max-width: 1100px;
+      margin: 2rem auto 0;
+    }
+  
+    .feature-box {
+      flex: 1;
+      max-width: 300px;
+    }
+  }
+  
+  
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  
+.gallery-container a {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Contact */
+
+.contact {
+    margin-top: 2rem;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Footer */
+
+.site-footer {
+    background: #111;
+    color: #eee;
+    padding: 3rem 2rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-brand h3 {
+    
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+  
+  .footer-col h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #ff3366;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col p, 
+  .footer-col a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-col a:hover {
+    color: #ff3366;
+  }
+  
+  .footer-col ul {
+    padding-left: 1rem;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem; /* Add space above the social icons */
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-social li {
+    display: inline-block;
+  }
+
+    .footer-social a {
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+        color: #ff3366; 
+    }
+
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .footer-col {
+      max-width: 30%;
+    }
+
+    .footer-social ul {
+        justify-content: left;
+    }
+    .footer-social a {
+        font-size: 1.75rem; /* Larger social media icons */
+    }
+  }
+  
