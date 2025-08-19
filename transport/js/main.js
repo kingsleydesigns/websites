@@ -131,32 +131,88 @@ accordionHeaders.forEach(header => {
 
 // Booking section js
 
-  const localTrips = [
-    { destination: 'Lagos ➔ Abuja', price: '₦7,500' },
-    { destination: 'Lagos ➔ Ibadan', price: '₦4,000' },
-    { destination: 'Lagos ➔ Port Harcourt', price: '₦9,000' },
-    { destination: 'Lagos ➔ Owerri', price: '₦6,000' },
-    { destination: 'Lagos ➔ Asaba', price: '₦5,000' },
-    { destination: 'Lagos ➔ Enugu', price: '₦8,500' },
-  ];
+//   const localTrips = [
+//     { destination: "Lagos ➔ Accra", document:"Int'l Passport (Regular)", vehicle: "Sienna", price: "₦90,500" },
+//     { destination: "Lagos ➔ Accra", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "₦90,500" },
+//     { destination: "Lagos ➔ Accra", document:"National ID", vehicle: "Sienna", price: "₦90,500" },
+//     { destination: "Accra ➔ Lagos", document:"Int'l Passport (Regular)", vehicle: "Sienna", price: "Gh₵ 850" },
+//     { destination: "Accra ➔ Lagos", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "Gh₵ 850" },
+//     { destination: "Accra ➔ Lagos", document:"National ID", vehicle: "Sienna", price: "Gh₵ 850" },
+//   ];
 
-  const internationalTrips = [
-    { destination: 'Lagos ➔ Accra', price: '₦25,000' },
-    { destination: 'Lagos ➔ Cotonou', price: '₦20,000' },
-    { destination: 'Lagos ➔ Lome', price: '₦22,000' },
-  ];
+//   const internationalTrips = [
+//     { destination: 'Lagos ➔ Accra', price: '₦25,000' },
+//     { destination: 'Lagos ➔ Cotonou', price: '₦20,000' },
+//     { destination: 'Lagos ➔ Lome', price: '₦22,000' },
+//   ];
 
-  function renderTrips(type) {
+//   function renderTrips(type) {
+//     const container = document.getElementById("trip-grid");
+//     const trips = type === 'local' ? localTrips : internationalTrips;
+//     container.innerHTML = trips.map((trip, index) => 
+//     `
+//     <div class="trip-card wow fadeInUp" data-wow-delay="${index * 0.2}s">
+//         <img src="img/sienna-icon.png" alt="bus icon">
+//         <div class="trip-details">
+//             <div class="destination">
+//                 <small>Destination:</small>
+//                 <h4>${trip.destination}</h4>
+//             </div>
+//             <div class="document">
+//                 <small>Document:</small>
+//                 <h4>${trip.document}</h4>
+//             </div>
+//             <div class="vehicle">
+//                 <small>Vehicle:</small>
+//                 <h4>${trip.vehicle}</h4>
+//             </div>
+//             <div class="price">
+//                 <small>Price:</small>
+//                 <h4>${trip.price}</h4>
+//             </div>
+//         </div>
+//     </div>
+//     `
+// ).join('');
+
+// Re-init WOW for dynamically added elements
+// new WOW().init();
+// }
+
+//   function filterTrips(type) {
+//     document.querySelectorAll('.filter-buttons button').forEach(btn => btn.classList.remove('active'));
+//     event.target.classList.add('active');
+//     renderTrips(type);
+//   }
+
+
+const localTrips = [
+    { destination: "Lagos ➔ Accra", document:"Int'l Passport (Regular)", vehicle: "Sienna", price: "₦90,500" },
+    { destination: "Lagos ➔ Accra", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "₦90,500" },
+    { destination: "Lagos ➔ Accra", document:"National ID", vehicle: "Sienna", price: "₦90,500" },
+    { destination: "Accra ➔ Lagos", document:"Int'l Passport (Regular)", vehicle: "Sienna", price: "Gh₵ 850" },
+    { destination: "Accra ➔ Lagos", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "Gh₵ 850" },
+    { destination: "Accra ➔ Lagos", document:"National ID", vehicle: "Sienna", price: "Gh₵ 850" },
+];
+
+function renderTrips() {
     const container = document.getElementById("trip-grid");
-    const trips = type === 'local' ? localTrips : internationalTrips;
-    container.innerHTML = trips.map((trip, index) => 
+    container.innerHTML = localTrips.map((trip, index) => 
     `
     <div class="trip-card wow fadeInUp" data-wow-delay="${index * 0.2}s">
-        <img src="img/bus-icon.png" alt="bus icon">
+        <img src="img/sienna-icon.png" alt="bus icon">
         <div class="trip-details">
             <div class="destination">
                 <small>Destination:</small>
                 <h4>${trip.destination}</h4>
+            </div>
+            <div class="document">
+                <small>Document:</small>
+                <h4>${trip.document}</h4>
+            </div>
+            <div class="vehicle">
+                <small>Vehicle:</small>
+                <h4>${trip.vehicle}</h4>
             </div>
             <div class="price">
                 <small>Price:</small>
@@ -165,40 +221,38 @@ accordionHeaders.forEach(header => {
         </div>
     </div>
     `
-).join('');
+    ).join('');
 
-// Re-init WOW for dynamically added elements
-new WOW().init();
+    // Re-init WOW for dynamically added elements
+    new WOW().init();
 }
 
-  function filterTrips(type) {
-    document.querySelectorAll('.filter-buttons button').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
-    renderTrips(type);
-  }
+// Run on page load
+renderTrips();
 
-  const modal = document.getElementById("bookingForm");
 
-  function openForm() {
-    modal.style.display = 'block';
-  }
+//   const modal = document.getElementById("bookingForm");
 
-  // Close modal when clicking outside the content
-    window.addEventListener("click", function (e) {
-        if (e.target === modal) {
-        modal.style.display = "none";
-        }
-    });
+//   function openForm() {
+//     modal.style.display = 'block';
+//   }
 
-  function closeForm() {
-    modal.style.display = 'none';
-  }
+//   // Close modal when clicking outside the content
+//     window.addEventListener("click", function (e) {
+//         if (e.target === modal) {
+//         modal.style.display = "none";
+//         }
+//     });
 
-  function saveBooking(e) {
-    e.preventDefault();
-    alert("Booking submitted successfully!");
-    closeForm();
-  }
+//   function closeForm() {
+//     modal.style.display = 'none';
+//   }
+
+//   function saveBooking(e) {
+//     e.preventDefault();
+//     alert("Booking submitted successfully!");
+//     closeForm();
+//   }
 
   // Initialize with Local trips
   window.onload = () => renderTrips('local');
