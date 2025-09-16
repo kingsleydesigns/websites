@@ -188,10 +188,10 @@ accordionHeaders.forEach(header => {
 
 const localTrips = [
     { destination: "Lagos ➔ Accra", document:"Int'l Passport (Regular)", vehicle: "Sienna", price: "₦90,500" },
-    { destination: "Lagos ➔ Accra", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "₦90,500" },
+    { destination: "Lagos ➔ Accra", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "₦100,500" },
     { destination: "Lagos ➔ Accra", document:"National ID", vehicle: "Sienna", price: "₦90,500" },
     { destination: "Accra ➔ Lagos", document:"Int'l Passport (Regular)", vehicle: "Sienna", price: "Gh₵ 850" },
-    { destination: "Accra ➔ Lagos", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "Gh₵ 850" },
+    { destination: "Accra ➔ Lagos", document:"Int'l Passport (Virgin)", vehicle: "Sienna", price: "Gh₵ 950" },
     { destination: "Accra ➔ Lagos", document:"National ID", vehicle: "Sienna", price: "Gh₵ 850" },
 ];
 
